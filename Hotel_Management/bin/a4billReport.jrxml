@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="a4billReport" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="832" leftMargin="5" rightMargin="5" topMargin="5" bottomMargin="5" uuid="089e8f7f-fe58-4875-9549-f7bb208c5a86">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[dGFibGVjdXN0b21lcmRldGFpbCBBUyAsMTE4LDExLDZjMGFkYzlhLTA5MzItNGNiMC1hMzJiLWM5
+NTBlZGVkNTIxYjs=]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<subDataset name="Dataset1" uuid="2bb6362e-34eb-44b6-8339-a985fa769bd5">
+		<property name="com.jaspersoft.studio.data.sql.tables">
+			<![CDATA[dGFibGVjdXN0b21lcmRldGFpbCBBUyAsMTM2LDQyLDFmOGYxZjRiLTE5ZmEtNDc0ZC04MTUyLTM5
+ZTkyNzk5NDE3Nzs=]]>
+		</property>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+		<queryString language="SQL">
+			<![CDATA[SELECT tablecustomerdetail."Invoice_Number",
+	tablecustomerdetail.savedate,
+	tablecustomerdetail.savetime,
+	tablecustomerdetail."Amount",
+	tablecustomerdetail.cgst,
+	tablecustomerdetail.sgst,
+	tablecustomerdetail."Discount",
+	tablecustomerdetail.grandtotal,
+	tablecustomerdetail."PaymentMode"
+FROM tablecustomerdetail]]>
+		</queryString>
+		<field name="Invoice_Number" class="java.lang.Object">
+			<property name="com.jaspersoft.studio.field.label" value="Invoice_Number"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tablecustomerdetail"/>
+		</field>
+		<field name="savedate" class="java.lang.Object">
+			<property name="com.jaspersoft.studio.field.label" value="savedate"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tablecustomerdetail"/>
+		</field>
+		<field name="savetime" class="java.lang.Object">
+			<property name="com.jaspersoft.studio.field.label" value="savetime"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tablecustomerdetail"/>
+		</field>
+		<field name="Amount" class="java.lang.Object">
+			<property name="com.jaspersoft.studio.field.label" value="Amount"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tablecustomerdetail"/>
+		</field>
+		<field name="cgst" class="java.lang.Object">
+			<property name="com.jaspersoft.studio.field.label" value="cgst"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tablecustomerdetail"/>
+		</field>
+		<field name="sgst" class="java.lang.Object">
+			<property name="com.jaspersoft.studio.field.label" value="sgst"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tablecustomerdetail"/>
+		</field>
+		<field name="Discount" class="java.lang.Object">
+			<property name="com.jaspersoft.studio.field.label" value="Discount"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tablecustomerdetail"/>
+		</field>
+		<field name="grandtotal" class="java.lang.Object">
+			<property name="com.jaspersoft.studio.field.label" value="grandtotal"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tablecustomerdetail"/>
+		</field>
+		<field name="PaymentMode" class="java.lang.Object">
+			<property name="com.jaspersoft.studio.field.label" value="PaymentMode"/>
+			<property name="com.jaspersoft.studio.field.tree.path" value="tablecustomerdetail"/>
+		</field>
+		<group name="Invoice_Number">
+			<groupExpression><![CDATA[$F{Invoice_Number}]]></groupExpression>
+		</group>
+		<group name="savedate">
+			<groupExpression><![CDATA[$F{savedate}]]></groupExpression>
+		</group>
+		<group name="savetime">
+			<groupExpression><![CDATA[$F{savetime}]]></groupExpression>
+		</group>
+		<group name="Amount">
+			<groupExpression><![CDATA[$F{Amount}]]></groupExpression>
+		</group>
+		<group name="cgst">
+			<groupExpression><![CDATA[$F{cgst}]]></groupExpression>
+		</group>
+		<group name="sgst">
+			<groupExpression><![CDATA[$F{sgst}]]></groupExpression>
+		</group>
+		<group name="Discount">
+			<groupExpression><![CDATA[$F{Discount}]]></groupExpression>
+		</group>
+		<group name="grandtotal">
+			<groupExpression><![CDATA[$F{grandtotal}]]></groupExpression>
+		</group>
+		<group name="PaymentMode">
+			<groupExpression><![CDATA[$F{PaymentMode}]]></groupExpression>
+		</group>
+	</subDataset>
+	<parameter name="date1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{date1}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="date2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{date2}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="subtotal" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{subtotal}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cgst" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{cgst}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="sgst" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{sgst}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="discount" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{discount}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="grandtotal" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{grandtotal}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="companyname" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$P{companyname}]]></defaultValueExpression>
+	</parameter>
+	<queryString language="SQL">
+		<![CDATA[SELECT tablecustomerdetail."Invoice_Number",
+	tablecustomerdetail."Customer_Name",
+	tablecustomerdetail."Mobile_Number",
+	tablecustomerdetail."Served_Waitername",
+	tablecustomerdetail.savedate,
+	tablecustomerdetail.savetime,
+	tablecustomerdetail."Amount",
+	tablecustomerdetail.sgst,
+	tablecustomerdetail.cgst,
+	tablecustomerdetail."Discount",
+	tablecustomerdetail.grandtotal,
+	tablecustomerdetail."PaymentMode"
+FROM tablecustomerdetail]]>
+	</queryString>
+	<field name="Invoice_Number" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="Invoice_Number"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tablecustomerdetail"/>
+	</field>
+	<field name="Customer_Name" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="Customer_Name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tablecustomerdetail"/>
+	</field>
+	<field name="Mobile_Number" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="Mobile_Number"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tablecustomerdetail"/>
+	</field>
+	<field name="Served_Waitername" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="Served_Waitername"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tablecustomerdetail"/>
+	</field>
+	<field name="savedate" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="savedate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tablecustomerdetail"/>
+	</field>
+	<field name="savetime" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="savetime"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tablecustomerdetail"/>
+	</field>
+	<field name="Amount" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="Amount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tablecustomerdetail"/>
+	</field>
+	<field name="sgst" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="sgst"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tablecustomerdetail"/>
+	</field>
+	<field name="cgst" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="cgst"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tablecustomerdetail"/>
+	</field>
+	<field name="Discount" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="Discount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tablecustomerdetail"/>
+	</field>
+	<field name="grandtotal" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="grandtotal"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tablecustomerdetail"/>
+	</field>
+	<field name="PaymentMode" class="java.lang.Object">
+		<property name="com.jaspersoft.studio.field.label" value="PaymentMode"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tablecustomerdetail"/>
+	</field>
+	<variable name="subtotal" class="java.lang.Double" calculation="Sum"/>
+	<group name="Invoice_Number">
+		<groupExpression><![CDATA[$F{Invoice_Number}]]></groupExpression>
+	</group>
+	<group name="Customer_Name">
+		<groupExpression><![CDATA[$F{Customer_Name}]]></groupExpression>
+	</group>
+	<group name="Mobile_Number">
+		<groupExpression><![CDATA[$F{Mobile_Number}]]></groupExpression>
+	</group>
+	<group name="Served_Waitername">
+		<groupExpression><![CDATA[$F{Served_Waitername}]]></groupExpression>
+	</group>
+	<group name="savedate">
+		<groupExpression><![CDATA[$F{savedate}]]></groupExpression>
+	</group>
+	<group name="savetime">
+		<groupExpression><![CDATA[$F{savetime}]]></groupExpression>
+	</group>
+	<group name="Amount">
+		<groupExpression><![CDATA[$F{Amount}]]></groupExpression>
+	</group>
+	<group name="sgst">
+		<groupExpression><![CDATA[$F{sgst}]]></groupExpression>
+	</group>
+	<group name="cgst">
+		<groupExpression><![CDATA[$F{cgst}]]></groupExpression>
+	</group>
+	<group name="Discount">
+		<groupExpression><![CDATA[$F{Discount}]]></groupExpression>
+	</group>
+	<group name="grandtotal">
+		<groupExpression><![CDATA[$F{grandtotal}]]></groupExpression>
+	</group>
+	<group name="PaymentMode">
+		<groupExpression><![CDATA[$F{PaymentMode}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="650" y="0" width="179" height="28" uuid="6e290f50-bf14-4d62-b5f3-42f907b37b8f"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="15" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORT]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="10" y="2" width="319" height="30" uuid="4f4fad59-a0e1-429d-86a5-7499640024a0"/>
+				<textElement>
+					<font size="15" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{companyname}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement x="80" y="0" width="140" height="30" uuid="df1bee2b-9a43-4c94-a207-c0e2689110fd"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="720" y="0" width="100" height="30" uuid="7356e24e-73e8-45a9-90a4-35174cfb28f8"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="80" height="30" uuid="0bb62ec5-c326-4b7f-8deb-70078708e120"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[From:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="620" y="2" width="80" height="28" uuid="44ca8a3e-49ff-4a11-b526-2eba58597b9b"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[To:]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="12" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="110" height="10" uuid="15bc4e7b-5074-4784-b2f0-c517a5d405cf">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="02536b9d-4507-4918-a876-31b7f60494da"/>
+				</reportElement>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Invoice_Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="0" width="90" height="10" uuid="d1d4d8de-b7c3-4713-a366-f537cd6c217c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7f584314-7993-42a4-b68e-08d8bb815570"/>
+				</reportElement>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[savedate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="0" width="80" height="10" uuid="2c9a5d8d-606c-47cd-9157-cdcd51e747e5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a8b7bc36-b212-4f99-b7d5-45e8633c73f3"/>
+				</reportElement>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[savetime]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="0" width="91" height="10" uuid="10099e89-d432-4c6c-9088-632013d21278">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="106b6310-4234-48a7-86fe-ded0a7446fb5"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="371" y="0" width="89" height="10" uuid="7ca58779-21fe-4e6e-bbef-cfce718c644a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9db8305e-5d94-41a2-9771-14b075303d36"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[cgst]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="460" y="0" width="90" height="10" uuid="2710e13d-0d3c-4687-9e76-e06104a26161">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f3caad32-019a-4ab5-a38a-38804b15fa72"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[sgst]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="551" y="0" width="89" height="10" uuid="32a07c35-dee8-4afb-873c-a3b047efd1ee">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="36fd77a5-9fe3-4942-be5c-bb1fb7e0b98e"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[Discount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="640" y="0" width="100" height="10" uuid="ff3c0f4e-81f6-4f1c-9f79-d06a46d25749">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e62c083b-66b9-4480-aa62-1ef6cd152184"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[grandtotal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="740" y="0" width="90" height="10" uuid="3d942308-58e1-4f3f-a37c-234d0f9fd6e4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9e3953ce-b4f9-4565-9017-4578dd2e355a"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="7"/>
+				</textElement>
+				<text><![CDATA[PaymentMode]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-2" y="-1" width="841" height="1" uuid="a1519e8b-720c-450b-b3d1-1877aa804b64"/>
+			</line>
+			<line>
+				<reportElement x="-5" y="10" width="845" height="1" uuid="f9f7a4a8-2720-4a7e-b501-d2970d262bfc"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="11" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="110" height="10" uuid="c3bc368c-788a-4ef7-a6c1-c80744daa86c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="02536b9d-4507-4918-a876-31b7f60494da"/>
+				</reportElement>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Invoice_Number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="0" width="90" height="10" uuid="c40c3d14-f67c-445d-b386-6d1c90bfb43c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7f584314-7993-42a4-b68e-08d8bb815570"/>
+				</reportElement>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{savedate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="80" height="10" uuid="f440ae83-6608-47d5-bc39-8770161269db">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a8b7bc36-b212-4f99-b7d5-45e8633c73f3"/>
+				</reportElement>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{savetime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="0" width="91" height="10" uuid="347d707c-d41e-4a69-8d78-b2855dbb7595">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="106b6310-4234-48a7-86fe-ded0a7446fb5"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Amount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="371" y="0" width="89" height="10" uuid="ddcc437c-fdf4-4314-b190-7fab64b5c1df">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9db8305e-5d94-41a2-9771-14b075303d36"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cgst}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="0" width="90" height="10" uuid="b9da93bb-3781-4eb5-ad23-b8f08c1822ca">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f3caad32-019a-4ab5-a38a-38804b15fa72"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sgst}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="551" y="0" width="89" height="10" uuid="97ccf809-fb53-4cfa-90da-ceba1cc016f7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="36fd77a5-9fe3-4942-be5c-bb1fb7e0b98e"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Discount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="640" y="0" width="100" height="10" uuid="c4720bc6-0e3f-4c92-b523-a858ec48af38">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e62c083b-66b9-4480-aa62-1ef6cd152184"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{grandtotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="740" y="0" width="90" height="10" uuid="5973a593-7f41-43c3-9718-98a1efca8692">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9e3953ce-b4f9-4565-9017-4578dd2e355a"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PaymentMode}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-4" y="10" width="843" height="1" uuid="c27e2948-81dc-4047-bec6-8d5e828888fc"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="200" y="0" width="80" height="20" uuid="a977ba50-f079-4b1d-b933-e50a41fde179"/>
+				<text><![CDATA[TOTAL:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="460" y="0" width="90" height="20" uuid="8546d7f5-50c5-48ff-bf1f-3ed67b3e4e90"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$P{cgst}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="371" y="1" width="89" height="19" uuid="9cb5b01c-4843-4915-96df-786815dc65f4"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$P{sgst}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="550" y="0" width="90" height="20" uuid="22d858b5-11e3-4525-96dc-cc899fd03f4c"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$P{discount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="1" width="91" height="19" uuid="a0bf92f2-95ae-4767-adf8-e5211db0a84e"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$P{subtotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="640" y="1" width="100" height="19" uuid="da447b69-7063-4b9b-8f08-c1d4e7676e36"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$P{grandtotal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
